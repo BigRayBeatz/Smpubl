@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Launch your music career with SMPUBL.com">
+  <title>SMPUBL | Launch Your Music Career</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    header {
+      background-color: #000000;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      color: #ffffff;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 0.5em 0 1em;
+    }
+    .cta {
+      margin: 20px 0;
+    }
+    .cta a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #ff5722;
+      color: #fff;
+    }
+    nav {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ff5722;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #2c2c2c;
+    }
+    section h2 {
+      color: #ff5722;
+      margin-bottom: 20px;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: none;
+      border-radius: 4px;
+      background-color: #2c2c2c;
+      color: white;
+    }
+    form button {
+      background-color: #ff5722;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    iframe {
+      border: none;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>SMPUBL</h1>
+  <p>Digital Music Publishing Administration</p>
+  <div class="cta">
+    <a href="#signup" class="btn-primary">Sign Up Now</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#signup">Sign Up</a>
+</nav>
+
+<section id="about">
+  <h2>About SMPUBL</h2>
+  <p>SMG Publishing offers music distribution, publishing admin, and rights protection services. Our goal is to empower creators through streamlined services and expert legal support.</p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+  <p>Choose from our media distribution or publishing administration services below and complete payment to get started.</p>
+</section>
+
+<section id="signup">
+  <h2>Sign Up & Payment</h2>
+  <p>Select your service and submit the form. Payment is processed securely via PayPal.</p>
+
+  <form id="signup-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option value="single">Single Distribution ($99)</option>
+      <option value="album">Album Distribution ($150)</option>
+      <option value="publishing">Publishing Admin (Flat Fee)</option>
+    </select>
+    <button type="submit">Submit & Pay</button>
+  </form>
+
+  <h3>Payment Links</h3>
+  <p>Click below to pay for your selected service:</p>
+  <p><a href="https://paypal.com/pay?amount=99" class="btn-primary">Pay $99 for Single Distribution</a></p>
+  <p><a href="https://paypal.com/pay?amount=150" class="btn-primary">Pay $150 for Album Distribution</a></p>
+  <p><a href="https://paypal.com/pay?amount=50" class="btn-primary">Pay Flat Fee for Publishing Admin</a></p>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Form submitted. Please complete payment using the links above.");
+    });
+  </script>
+</section>
+
+<footer>
+  Contact: <a href="mailto:raysmpubl@gmail.com">raysmpubl@gmail.com</a> | © 2025 SMPUBL
+</footer>
+
+<section id="register" style="text-align: center; padding: 60px 20px;">
+  <h2 style="color: #ffa500;">Register for Publishing Admin Services</h2>
+  <p>Submit your details to get started with SMPUBL’s publishing admin. We support TuneCore, SoundClick, DistroKid, BeatStars, BandLab, and more.</p>
+  <a href="#publishing-form" class="cta-button" style="background-color:#00ff99; color:#000; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px;">Start Registration</a>
+</section>
+
+<section id="publishing-form" style="max-width: 600px; margin: 0 auto; padding: 40px 20px;">
+  <form action="https://www.tunecore.com" method="get" onsubmit="return handleRedirect(event)">
+    <input type="text" name="name" placeholder="Your Full Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 4px; background-color: #222; color: #fff; border: none;">
+    <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 4px; background-color: #222; color: #fff; border: none;">
+    <input type="text" name="artist" placeholder="Artist / Band Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 4px; background-color: #222; color: #fff; border: none;">
+    
+    <label style="color: #aaa; display: block; margin-bottom: 10px;">Which platform are you submitting for?</label>
+    <select id="platformSelect" name="platform" required style="width: 100%; padding: 12px; margin-bottom: 20px; border-radius: 4px; background-color: #222; color: #fff;">
+      <option value="https://www.tunecore.com">TuneCore</option>
+      <option value="https://www.soundclick.com">SoundClick</option>
+      <option value="https://www.soundcloud.com">SoundCloud</option>
+      <option value="https://www.distrokid.com">DistroKid</option>
+      <option value="https://www.shopify.com">Shopify</option>
+      <option value="https://www.beatstars.com">BeatStars</option>
+      <option value="https://www.bandlab.com">BandLab</option>
+    </select>
+
+    <button type="submit" style="background-color: #00ff99; color: #000; padding: 12px 24px; border: none; border-radius: 4px; font-weight: bold;">Submit & Redirect</button>
+  </form>
+</section>
+
+<script>
+  function handleRedirect(event) {
+    event.preventDefault();
+    const platformUrl = document.getElementById("platformSelect").value;
+    window.location.href = platformUrl;
+    return false;
+  }
+</script>
+
+</body>
+</html>
