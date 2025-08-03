@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Launch your music career with SMPUBL. Music distribution, publishing, and artist services.">
+  <title>SMPUBL | Launch Your Music Career</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #121212;
+      color: #ffffff;
+    }
+    nav {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #ff5722;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header {
+      background-color: #000000;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+    header p {
+      font-size: 1.2em;
+      margin: 0.5em 0 1em;
+    }
+    .cta {
+      margin: 20px 0;
+    }
+    .cta a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .btn-primary {
+      background-color: #ff5722;
+      color: #fff;
+    }
+    .btn-secondary {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+    section {
+      padding: 40px 20px;
+      border-bottom: 1px solid #2c2c2c;
+    }
+    section h2 {
+      color: #ff5722;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      background-color: #1e1e1e;
+      padding: 40px 20px;
+    }
+    .service-box {
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      background-color: #2c2c2c;
+    }
+    .newsletter {
+      text-align: center;
+      padding: 20px;
+      background-color: #1e1e1e;
+    }
+    .newsletter input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 4px;
+      border: none;
+      width: 250px;
+      background-color: #2c2c2c;
+      color: #fff;
+    }
+    .newsletter button {
+      padding: 10px 20px;
+      border: none;
+      background-color: #ff5722;
+      color: #fff;
+      border-radius: 4px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #000;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    a {
+      color: #ff5722;
+    }
+  </style>
+  <!-- Google Analytics (Replace 'G-XXXXXXXXXX' with your actual ID) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+
+  <nav aria-label="Main Navigation">
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="https://dashboard.smpubl.com" target="_blank">Dashboard</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="home" aria-label="Main Header">
+    <h1>Launch Your Music Career</h1>
+    <p>Distribute, Promote, and Earn — All in One Place</p>
+    <div class="cta">
+      <a href="#pricing" class="btn-primary">Get Started</a>
+      <a href="#pricing" class="btn-secondary">View Pricing Plans</a>
+      <a href="https://dashboard.smpubl.com/signup" class="btn-secondary" target="_blank">Join Now</a>
+    </div>
+  </header>
+
+  <section id="services" aria-label="Our Services">
+    <h2>Our Core Services</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>Digital Music Distribution</h3>
+        <p>Distribute your music to 150+ platforms and keep 100% of your royalties.</p>
+      </div>
+      <div class="service-box">
+        <h3>Publishing Administration</h3>
+        <p>Collect royalties, manage copyrights, and track your music worldwide.</p>
+      </div>
+      <div class="service-box">
+        <h3>Artist Services</h3>
+        <p>Promotional tools, royalty splits, and music production platform access.</p>
+      </div>
+      <div class="service-box">
+        <h3>Accelerator Program</h3>
+        <p>Apply for industry mentorship, playlisting, and career growth tools.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" aria-label="Pricing Plans">
+    <h2>Pricing Plans</h2>
+    <p style="text-align:center;">Choose a plan that fits your career goals. <br><a href="https://smpubl.com/pricing" target="_blank" class="btn-primary">View Full Pricing</a></p>
+  </section>
+
+  <section id="contact" class="newsletter" aria-label="Newsletter Signup">
+    <h2>Join Our Newsletter</h2>
+    <p>Get music tips, artist advice, and industry updates straight to your inbox.</p>
+    <!-- Replace the form action with your Mailchimp embed code or link -->
+    <form action="https://your-mailchimp-url" method="post" target="_blank">
+      <input type="email" name="EMAIL" placeholder="Enter your email" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer aria-label="Footer">
+    Contact: <a href="mailto:raysmpubl@gmail.com">raysmpubl@gmail.com</a> |
+    © 2025 SMPUBL | Artist Advice • Music Tips • Industry News
+  </footer>
+
+</body>
+</html>
