@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMG Publishing Signup</title>
+  <style>
+    body {
+      font-family: 'Lato', sans-serif;
+      background-color: #F9F9F9;
+      color: #1C1C1C;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1, h2 {
+      font-family: 'Oswald', sans-serif;
+      color: #4B0082;
+    }
+    .cta-button, .button {
+      background-color: #3B9EFF;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin: 1rem;
+      text-decoration: none;
+      display: inline-block;
+    }
+    input[type="text"], input[type="email"] {
+      padding: 0.75rem;
+      margin: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 80%;
+      max-width: 400px;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    .footer {
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>SMG Publishing</h1>
+  <h2>Start Your Music Publishing Journey</h2>
+
+  <a href="#signup-form" class="cta-button">Sign Up for Publishing Services</a>
+
+  <section id="signup-form">
+    <h2>Sign Up</h2>
+    <form id="publishing-signup" onsubmit="handleSignup(event)">
+      <input type="text" name="name" placeholder="Your Name" required /><br>
+      <input type="email" name="email" placeholder="Your Email" required /><br>
+      <button type="submit" class="cta-button">Continue</button>
+    </form>
+<section id="signup">
+  <h2>Sign Up & Payment</h2>
+  <p>Select your service and submit the form. Payment is processed securely via PayPal.</p>
+
+  <form id="signup-form">
+    <input type="text" name="name" placeholder="Your Name" required />
+    <input type="email" name="email" placeholder="Your Email" required />
+    <select name="service" required>
+      <option value="">Select Service</option>
+      <option value="single">Single Distribution ($99)</option>
+      <option value="album">Album Distribution ($150)</option>
+      <option value="publishing">Publishing Admin (Flat Fee)</option>
+    </select>
+    <button type="submit">Submit & Pay</button>
+  </form>
+
+  <h3>Payment Links</h3>
+  <p>Click below to pay for your selected service:</p>
+  <p><a href="https://paypal.com/pay?amount=99" class="btn-primary">Pay $99 for Single Distribution</a></p>
+  <p><a href="https://paypal.com/pay?amount=150" class="btn-primary">Pay $150 for Album Distribution</a></p>
+  <p><a href="https://paypal.com/pay?amount=50" class="btn-primary">Pay Flat Fee for Publishing Admin</a></p>
+
+  <script>
+    document.getElementById('signup-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Form submitted. Please complete payment using the links above.");
+    });
+  </script>
+  </section>
+
+  <script>
+    function handleSignup(e) {
+      e.preventDefault();
+      // You can optionally store the name/email here
+      window.location.href = "thank-you.html";
+    }
+  </script>
+
+  <div class="footer">
+    &copy; 2025 SMG Publishing | Raymond Summers
+  </div>
+
+</body>
+</html>
