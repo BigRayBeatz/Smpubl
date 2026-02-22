@@ -1,0 +1,119 @@
+<html lang="en"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SMGPUB℠ | Home</title>
+<link rel="stylesheet" href="css/glass-ui.css">
+</head>
+<body>
+<header>
+    <div class="logo" onclick="window.scrollTo(0,0)">SMGPUB℠</div>
+    <nav>
+        <a href="#publishing">Publishing</a>
+        <a href="#plans">Plans</a>
+        <a href="#beats">Beats</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#contact">Contact</a>
+        <a href="#login" class="btn">Login</a>
+    </nav>
+</header>
+ 
+<section id="home" class="hero">
+    <h1>Music Publishing<br><span>Done Right.</span></h1>
+    <p>Global royalty collection, beat licensing, and real-time dashboards.</p>
+    <div class="btn-group">
+        <button class="btn" onclick="subscribe('pro')">Start Membership</button>
+        <a href="#publishing" class="btn outline">Explore Features</a>
+    </div>
+</section>
+ 
+<section id="publishing">
+    <h2>Publishing Administration</h2>
+    <div class="grid">
+        <div class="card"><h3>Global Royalties</h3><p>Worldwide collection via professional publishing infrastructure and PRO registration.</p></div>
+        <div class="card"><h3>Rights Control</h3><p>Retain 100% ownership. We manage collection and reporting.</p></div>
+        <div class="card"><h3>Sync Ready</h3><p>Catalog structured for immediate film, TV, and game licensing.</p></div>
+    </div>
+</section>
+ 
+<section id="plans">
+    <h2>Membership Plans</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Starter</h3>
+            <div class="price">$89.99 /mo</div>
+            <ul>
+                <li>PRO Registration</li>
+                <li>10 Works / Month</li>
+                <li>Basic Reporting</li>
+            </ul>
+            <button class="btn outline" onclick="subscribe('starter')">Subscribe</button>
+        </div>
+        <div class="card featured">
+            <h3>Pro Publisher</h3>
+            <div class="price">$149 /mo</div>
+            <ul>
+                <li>Unlimited Uploads</li>
+                <li>Global Sync Pitching</li>
+                <li>Advanced Analytics</li>
+            </ul>
+            <button class="btn" onclick="subscribe('pro')">Subscribe</button>
+        </div>
+        <div class="card">
+            <h3>Partner Suite</h3>
+            <div class="price">Custom</div>
+            <ul>
+                <li>White-label Licensing</li>
+                <li>Team/Sub-label Access</li>
+                <li>Dedicated Manager</li>
+            </ul>
+            <button class="btn outline" onclick="contactUs()">Contact Us</button>
+        </div>
+    </div>
+</section>
+ 
+<section id="beats">
+    <h2>Featured Beats</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Night Shift</h3>
+            <p>Trap • 140 BPM • A minor</p>
+            <audio controls="" src="assets/audio/night-shift.mp3"></audio>
+            <button class="btn outline">Buy License - $49.99</button>
+        </div>
+        <div class="card">
+            <h3>Blue Hour</h3>
+            <p>Lo-Fi • 80 BPM • C major</p>
+            <audio controls="" src="assets/audio/blue-hour.mp3"></audio>
+            <button class="btn outline">Buy License - $39.99</button>
+        </div>
+    </div>
+</section>
+ 
+<section id="dashboard">
+    <h2>Creator Dashboard</h2>
+    <div class="grid">
+        <div class="card"><h3>Catalog</h3><p>Manage tracks & metadata</p></div>
+        <div class="card"><h3>Royalties</h3><p>View detailed earnings statements</p></div>
+        <div class="card"><h3>Licenses</h3><p>Issue and track agreements</p></div>
+    </div>
+    <button class="btn" onclick="goDashboard()">Enter Dashboard</button>
+</section>
+ 
+<section id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="sendMessage(event)">
+        <input placeholder="Name" required="">
+        <input placeholder="Email" type="email" required="">
+        <textarea placeholder="How can we help?" required=""></textarea>
+        <button class="btn outline">Send Message</button>
+    </form>
+</section>
+ 
+<footer>
+    <p>© 2026 SMGPUB℠ — Summer’s Media LLC</p>
+</footer>
+ 
+<script src="js/main.js"></script>
+<script src="js/notifications.js"></script>
+ 
+</body></html>
